@@ -1,0 +1,257 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #EEEEEE;
+}
+
+.wraper {
+	width: 600px;
+	margin: 10px auto 0px;
+	background-color: #FFF;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #aaa;
+}
+
+.bottom {
+	width: 600px;
+	margin: 10px auto 0px;
+}
+
+
+
+.w-top {
+	background-color: #EEE;
+
+}
+
+.w-top:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.logo {
+	width: 30%;
+	float: left;
+	text-align: center;
+
+}
+
+.logo img {
+	padding: 10px;
+	width: 82px;
+	height: 82px;
+}
+
+.banner {
+	width: 70%;
+	float: left;
+	background-image: url('../images/banner_flag.jpg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: green;
+}
+
+.banner h3 {
+	font-size: 17px;
+	color: #95e17d;
+	margin: 0px 0px 10px 5px;
+	padding-top: 10px;
+}
+
+.banner h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFEE;
+	margin: 3px 0px 0px 5px;
+	font-size: 17px;
+	padding-bottom: 22px;
+}
+
+.search-result {
+	width: 350px;
+	border: 1px solid #aaa;
+	padding: 40px;
+	margin: 50px auto 50px;
+}
+
+.search-result table {
+	width: 100%;
+
+}
+
+
+
+
+.search-result table tr td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	margin: 10px 0px !important;
+}
+
+.search-result table tr td select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #F4F0F2;
+	border: 1px solid #999;
+	font-weight: normal;
+	width: 205px;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 4px;
+	border-radius: 4px;
+}
+
+.search-result table tr td input[type="text"] {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #F4F0F2;
+	border: 1px solid #999;
+	font-weight: normal;
+	width: 200px;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 4px;
+	border-radius: 4px;
+}
+
+.w-footer {
+	background-color: #F2F2F2;
+	border-top: 5px solid #86C775;
+	padding: 20px;
+	border-radius: 0px 0px 5px 5px ;
+}
+
+.w-footer:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.w-footer .f-left {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	line-height: 15px;
+	float: left;
+	width: 60%
+}
+
+.w-footer .f-left  p {
+	padding:  16px 0px;
+}
+
+.w-footer .f-right {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	line-height: 15px;
+	float: left;
+	width: 40%;
+	text-align: right;
+}
+
+.w-footer .f-right img {
+	vertical-align: middle;
+}
+
+.student-result {
+	padding: 10px;
+}
+
+.student-result table {
+	width: 100%;
+
+}
+.student-result table tr:nth-child(even) {
+	background-color: #EEEEEE;
+	font-weight: bold;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.student-result table tr:nth-child(odd) {
+	background-color: #DEE1E4;
+	font-weight: bold;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.student-result table tr:nth-child(1) {
+	background-color: #AFB7BE;
+	font-weight: bold;
+	font-size: 12px;
+}
+.student-result table tr td {
+	padding: 3px;
+}
+
+.student-info {
+	margin: 30px 0px;
+}
+
+.student-info:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.student-info .student-photo {
+	width: 40%;
+	float: left;
+}
+
+.student-info .student-photo img {
+	width: 150px;
+	height: 150px;
+	border: 10px solid #FFF;
+	box-shadow: 0px 0px 5px #ccc ;
+}
+
+.student-info .student-details {
+	width: 60%;
+	float: left;
+}
+
+
+.student-info .student-details table {
+	width: 100%;	
+	color: #333;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+.student-info .student-details table tr td:first-child {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.student-info .student-details table tr td {
+	padding: 5px;
+}
+
+.student-info .student-details table tr td:last-child {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.student-info .student-details table tr:nth-child(even) {
+	background-color: #EEEEEE;
+}
+
+.student-info .student-details table tr:nth-child(odd) {
+	background-color: #DEE1E4;
+}
