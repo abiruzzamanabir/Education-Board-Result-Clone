@@ -1,7 +1,7 @@
 <?php
 include_once './db.php';
 include_once './queris.php';
-
+$msg=$_GET['error'] ?? '';
 
 
 ?>
@@ -23,6 +23,7 @@ include_once './queris.php';
 
 
 	<div class="wraper">
+	
 		<div class="w-top">
 			<div class="logo">
 				<img src="assets/images/bd_logo.png" alt="">
@@ -36,7 +37,7 @@ include_once './queris.php';
 		</div>
 		<div class="w-main">
 			<div class="search-result">
-				<form action="" method="GET">
+				<form action="./search.php" method="POST">
 
 					<table>
 						<tr>

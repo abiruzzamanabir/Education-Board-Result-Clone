@@ -1,19 +1,36 @@
 <?php
 include_once './db.php';
 
-if (isset($_GET['id'])) {
 
-	$id = $_GET['id'];
-    $data = $connection->query("SELECT * FROM studentinfo  WHERE roll='$id'");
-    $student_data = $data->fetch_object();
-	$bn=	gpa($student_data->bn);
-	$en=	gpa($student_data->en);
-	$math=	gpa($student_data->math);
-	$ict=	gpa($student_data->ict);
-	$reli=	gpa($student_data->reli);
-} else {
-    header('location:./');
-}
+	if (isset($_POST['submit'])) {
+		$dept = $_POST['dept'];
+		$year = $_POST['year'] ?? "";
+		$board = $_POST['board'] ?? "";
+		$roll = $_POST['roll'];
+		$reg = $_POST['reg'];
+	
+	
+		if (empty($dept) || empty($year) || empty($board) || empty($roll) || empty($reg)) {
+			header("location:./?error=All Fields Are Required !");
+		} 
+		else {
+			$data = $connection->query("SELECT * FROM studentinfo  WHERE roll='$roll' AND reg='$reg' AND dept='$dept' AND year='$year' AND board='$board'");
+			if($student_data = $data->fetch_object()){
+				$student_data = $data->fetch_object();
+			}else{
+				header("location:./?error=Data Not Matched !");
+			}
+			$bn=	gpa($student_data->bn);
+			$en=	gpa($student_data->en);
+			$math=	gpa($student_data->math);
+			$ict=	gpa($student_data->ict);
+			$reli=	gpa($student_data->reli);
+			
+		}
+	}
+	else{
+		header("location:./");
+	}
 
 function grade($marks){
 
